@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Contact | Dheeraj Saroha{% endblock %}
+
+{% block content %}
+<section class="section" style="min-height: 70vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;">
+    <div class="section-header">
+        <h2>Get In Touch</h2>
+        <p>Actively open to opportunities in Software Engineering, AI/ML Engineering, and Data Science.</p>
+    </div>
+
+    <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; width: 100%; max-width: 900px;">
+        
+        <!-- Contact Information Card -->
+        <div class="card" style="flex: 1; min-width: 300px; text-align: left;">
+            <h3 style="color: var(--accent-blue); margin-bottom: 1.5rem; display: flex; align-items: center; gap: 10px;">
+                <i class="fa-solid fa-address-card"></i> Direct Channels
+            </h3>
+            <ul class="pivot-list" style="margin-bottom: 2rem; list-style: none;">
+                <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-envelope" style="color: var(--accent-blue); width: 20px;"></i> 
+                    <div>
+                        <strong>Email:</strong><br>
+                        <a href="mailto:dheerajsaroha2892002@gmail.com" style="color: var(--text-muted); text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='var(--text-muted)'">dheerajsaroha2892002@gmail.com</a>
+                    </div>
+                </li>
+                <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-phone" style="color: var(--accent-green); width: 20px;"></i> 
+                    <div>
+                        <strong>Phone:</strong><br>
+                        <a href="tel:+918930601580" style="color: var(--text-muted); text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--accent-blue)'" onmouseout="this.style.color='var(--text-muted)'">+91-8930601580</a>
+                    </div>
+                </li>
+                <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-solid fa-location-dot" style="color: var(--accent-purple); width: 20px;"></i> 
+                    <div>
+                        <strong>Location:</strong><br>
+                        <span style="color: var(--text-muted);">Panipat, Haryana, India</span>
+                    </div>
+                </li>
+                <li style="margin-bottom: 1rem; display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-brands fa-linkedin" style="color: #0a66c2; width: 20px;"></i> 
+                    <div>
+                        <strong>LinkedIn:</strong><br>
+                        <a href="https://linkedin.com/in/dheeraj-saroha" target="_blank" style="color: var(--accent-blue); text-decoration: none;">linkedin.com/in/dheeraj-saroha</a> 
+                    </div>
+                </li>
+                <li style="display: flex; align-items: center; gap: 10px;">
+                    <i class="fa-brands fa-github" style="color: var(--text-main); width: 20px;"></i> 
+                    <div>
+                        <strong>GitHub:</strong><br>
+                        <a href="https://github.com/dheerajsaroha" target="_blank" style="color: var(--accent-blue); text-decoration: none;">github.com/dheerajsaroha</a> 
+                    </div>
+                </li>
+            </ul>
+            <a href="mailto:dheerajsaroha2892002@gmail.com" class="btn btn-primary" style="justify-content: center; width: 100%;">
+                <i class="fa-solid fa-paper-plane"></i> Send Direct Message
+            </a>
+        </div>
+
+        <!-- Resume Download Card -->
+        <div class="card" style="flex: 1; min-width: 300px; text-align: center; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+            <i class="fa-solid fa-file-pdf" style="font-size: 3.5rem; color: var(--accent-purple); margin-bottom: 1rem;"></i>
+            <h3 style="margin-bottom: 0.5rem;">Recruiter Resume Package</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem;">
+                Download the complete resume detailing software engineering experience, AI/ML models, RAG pipelines, and technical benchmarks .
+            </p>
+            <div style="display: flex; gap: 1rem; flex-wrap: wrap; justify-content: center; width: 100%;">
+                <a href="{% static 'docs/Dheeraj_Resume.pdf' %}" target="_blank" class="btn btn-primary" download style="flex: 1; justify-content: center;">
+                    <i class="fa-solid fa-download"></i> Download PDF
+                </a>
+                <a href="{% static 'docs/Dheeraj_Resume.pdf' %}" target="_blank" class="btn btn-secondary" style="flex: 1; justify-content: center;">
+                    <i class="fa-solid fa-eye"></i> View Online
+                </a>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

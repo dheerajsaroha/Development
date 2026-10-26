@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% block title %}Experience | Dheeraj Saroha{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="section-header">
+        <h2>Professional Experience</h2>
+        <p>Software Engineering, API Development, and AI System Implementation.</p>
+    </div>
+
+    <div class="timeline" style="max-width: 900px; margin: 0 auto; display: flex; flex-direction: column; gap: 2rem;">
+        
+        <!-- Experience Item 1 -->
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                <div>
+                    <h3 style="font-size: 1.3rem; color: var(--accent-blue);">Software Engineer Intern</h3>
+                    <h4 style="color: var(--text-muted); font-weight: 500;">NIELIT Kurukshetra</h4>
+                </div>
+                <span class="tag" style="color: var(--accent-green); border-color: rgba(52, 211, 153, 0.3);">Feb 2026 – Aug 2026</span>
+            </div>
+            
+            <ul class="pivot-list" style="margin-bottom: 1.5rem;">
+                <li><i class="fa-solid fa-angle-right"></i> Engineered a multi-role employee management application featuring JWT authentication, Role-Based Access Control (RBAC), and secure CRUD via 12+ modular REST API endpoints in a layered architecture.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Co-developed <strong>VisionCore</strong>, an AI face-recognition attendance system utilizing pgvector similarity search, achieving 88–90% accuracy across 50+ individuals.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Developed Python backend modules with structured data validation for an attendance platform supporting 100+ active workforce members.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Optimized SQL queries and PostgreSQL relational schemas to accelerate data retrieval while ensuring strict transaction reliability.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Guided students in Python, Web Development, and IoT; supported lab administration and examination workflows.</li>
+            </ul>
+
+            <div class="tech-tags">
+                <span class="tag">Python</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">SQLAlchemy</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">JWT / RBAC</span>
+                <span class="tag">React</span>
+                <span class="tag">Agile/Scrum</span>
+            </div>
+        </div>
+
+        <!-- Experience Item 2 -->
+        <div class="card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem;">
+                <div>
+                    <h3 style="font-size: 1.3rem; color: var(--accent-blue);">Software Engineer</h3>
+                    <h4 style="color: var(--text-muted); font-weight: 500;">Unthinkable Solutions LLP</h4>
+                </div>
+                <span class="tag" style="color: var(--accent-green); border-color: rgba(52, 211, 153, 0.3);">Aug 2022 – Aug 2023</span>
+            </div>
+
+            <ul class="pivot-list" style="margin-bottom: 1.5rem;">
+                <li><i class="fa-solid fa-angle-right"></i> Delivered and maintained modular web application components in Ruby on Rails (RoR) and PHP/WordPress in live production environments over a 12-month period.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Collaborated with cross-functional teams to gather requirements, debug production issues, optimize backend services, and ship reliable software releases.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Adapted effectively across changing technology stacks to maintain seamless service delivery.</li>
+            </ul>
+
+            <div class="tech-tags">
+                <span class="tag">Ruby on Rails</span>
+                <span class="tag">PHP</span>
+                <span class="tag">WordPress</span>
+                <span class="tag">REST APIs</span>
+                <span class="tag">Git</span>
+                <span class="tag">Production Maintenance</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

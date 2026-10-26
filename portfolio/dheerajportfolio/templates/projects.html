@@ -1,0 +1,210 @@
+{% extends 'base.html' %}
+{% block title %}Projects | Dheeraj Saroha{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="section-header">
+        <h2>Projects Showcase</h2>
+        <p>Full-stack Software Engineering, Applied AI/ML Pipelines, and Data Analytics / EDA Solutions.</p>
+    </div>
+
+    <!-- Category 1: AI / ML & GenAI Pipelines -->
+    <h3 style="color: var(--accent-purple); margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+        <i class="fa-solid fa-brain"></i> AI / ML & GenAI Pipelines
+    </h3>
+    <div class="grid" style="margin-bottom: 3.5rem;">
+
+        <!-- VisionCore -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">VisionCore: Face Recognition Attendance System</h3>
+                <p class="card-desc">
+                    Replaced manual roll-calls with real-time face matching against vector embeddings using <code>pgvector</code> similarity search. Integrated with a JWT-secured FastAPI backend and React + Tailwind UI. Achieved 88–90% recognition accuracy on 50+ users.
+                </p>
+            </div>
+            <div>
+                <div class="tech-tags">
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">pgvector</span>
+                    <span class="tag">SQLAlchemy</span>
+                    <span class="tag">Computer Vision</span>
+                    <span class="tag">React</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/dheerajsaroha/VisionCore2.0" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI Document Assistant (RAG) -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">AI Document Assistant (RAG Pipeline)</h3>
+                <p class="card-desc">
+                    Hybrid semantic (FAISS) + lexical (BM25) retrieval pipeline answering queries over PDF, DOCX, CSV, and PPTX with exact source citation. Integrated local fallback models and confidence checks, achieving 88.46% Recall@5, 0.8348 MRR, and 92.31% classification accuracy.
+                </p>
+            </div>
+            <div>
+                <div class="tech-tags">
+                    <span class="tag">LangChain</span>
+                    <span class="tag">FAISS</span>
+                    <span class="tag">BM25</span>
+                    <span class="tag">Gemini API</span>
+                    <span class="tag">Streamlit</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/dheerajsaroha/AI-Assistant" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- RNN QA System -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">RNN-Based Question Answer System</h3>
+                <p class="card-desc">
+                    Sequence modeling deep learning application built using Recurrent Neural Network (RNN) architectures for natural language processing, text tokenization, and contextual answer generation.
+                </p>
+            </div>
+            <div>
+                <div class="tech-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">PyTorch</span>
+                    <span class="tag">NLP</span>
+                    <span class="tag">RNN</span>
+                    <span class="tag">Deep Learning</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/dheerajsaroha/RNN-based-Question-Answer-System" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Category 2: Data Analysis, EDA & Statistical Modeling -->
+    <h3 style="color: var(--accent-blue); margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+        <i class="fa-solid fa-chart-line"></i> Data Analysis, EDA & Predictive Modeling
+    </h3>
+    <div class="grid" style="margin-bottom: 3.5rem;">
+
+        <!-- Customer Churn -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Customer Churn Prediction & Class Imbalance Pipeline</h3>
+                <p class="card-desc">
+                    In-depth EDA and feature engineering on Telco dataset (~27% churn rate, 19 categorical features). Benchmarked 10 classifiers using 5-fold cross-validation. Oversampling with SMOTE boosted XGBoost F1 score from 0.553 to 0.850. Deployed Random Forest model (82.7% ROC AUC) via Flask UI & REST API.
+                </p>
+            </div>
+            <div>
+                <div class="tech-tags">
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">XGBoost</span>
+                    <span class="tag">SMOTE</span>
+                    <span class="tag">EDA / Pandas</span>
+                    <span class="tag">Flask</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://customer-churn-prediction-topaz.vercel.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                </div>
+            </div>
+        </div>
+        <!-- Freight Rate Prediction Challenge -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Freight Rate Prediction Challenge</h3>
+                <p class="card-desc">
+                    End-to-end ML pipeline predicting spot freight rates for 12,000 validation loads and December 2025 fixed-lane trends (Lexington → Fort Wayne). Built with zero-leakage chronological 5-fold cross-validation, fold-local target transformation (<code>log1p</code>), and tuned <code>HistGradientBoostingRegressor</code> (Achieved ~0.8384 R²). Deployed via an interactive Streamlit application.
+                </p>
+            </div>
+            <div>
+                <div class="tech-tags">
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">HistGradientBoosting</span>
+                    <span class="tag">Pandas / NumPy</span>
+                    <span class="tag">Chronological CV</span>
+                    <span class="tag">Streamlit</span>
+                </div>
+                <div class="card-links" style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="https://freight-rate-prediction-hpth23jvmg8cvft23gvn8v.streamlit.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live App</a>
+                    <a href="https://github.com/dheerajsaroha" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Healthcare Readmission -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Healthcare Readmission Risk Analytics</h3>
+                <p class="card-desc">
+                    End-to-end predictive analytics system using PySpark for big-data processing and transformations, alongside Pandas/NumPy for statistical data cleaning and feature engineering. Model served via Flask REST API.
+                </p>
+            </div>
+            <div>
+                <div class="tech-tags">
+                    <span class="tag">PySpark</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                    <span class="tag">Statistical Modeling</span>
+                    <span class="tag">Flask</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://healthcare-readmission-risk-predict-phi.vercel.app" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Category 3: Software Engineering & Enterprise Backend -->
+    <h3 style="color: var(--accent-green); margin-bottom: 1.5rem; font-size: 1.5rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5rem;">
+        <i class="fa-solid fa-server"></i> Software Engineering & Enterprise Backend
+    </h3>
+    <div class="grid">
+
+        <!-- Employee & Workforce Management API -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Multi-Role Employee & Workforce Platform API</h3>
+                <p class="card-desc">
+                    Architected layered REST APIs with JWT authentication, fine-grained Role-Based Access Control (RBAC), structured validation, and PostgreSQL schema normalization supporting 100+ active workforce users.
+                </p>
+            </div>
+            <div>
+                <div class="tech-tags">
+                    <span class="tag">FastAPI</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">JWT / RBAC</span>
+                    <span class="tag">Docker</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/dheerajsaroha" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                </div>
+            </div>
+        </div>
+        <!-- Django Portfolio Application -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">Dynamic Multi-App Portfolio Application</h3>
+                <p class="card-desc">
+                    Architected and developed a production-ready, multi-app portfolio platform utilizing Django backend framework. Built with modular template inheritance (`base.html`), namespaced URL routing, advanced CSS glassmorphism UI, and structured static asset management to seamlessly showcase software engineering and AI/ML career transitions.
+                </p>
+            </div>
+            <div>
+                <div class="tech-tags">
+                    <span class="tag">Django</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">HTML5 / Advanced CSS</span>
+                    <span class="tag">Template Inheritance</span>
+                    <span class="tag">Modular Architecture</span>
+                </div>
+                <div class="card-links">
+                    <a href="https://github.com/dheerajsaroha" target="_blank"><i class="fa-brands fa-github"></i> Repository</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}

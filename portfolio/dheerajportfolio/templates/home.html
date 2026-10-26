@@ -1,0 +1,65 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home | Dheeraj Saroha{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="max-width-container" style="display: flex; align-items: center; justify-content: space-between; gap: 3rem; flex-wrap: wrap-reverse;">
+        
+        <!-- Hero Text -->
+        <div style="flex: 1; min-width: 300px;">
+            <div class="badge-container">
+                <i class="fa-solid fa-code-branch"></i> Software Engineer &rarr; AI/ML Engineer
+            </div>
+            <h1>Building Scalable Software.<br><span>Engineering Intelligence.</span></h1>
+            <p class="hero-subtitle">
+                Hi, I'm <strong>Dheeraj Saroha</strong>. Software Developer with ~1.5 years of professional engineering experience transitioning into scalable Machine Learning pipelines, NLP systems, and predictive Flask & FastAPI microservices.
+            </p>
+            <div class="cta-buttons">
+                <!-- Direct Resume Download Button -->
+                <a href="{% static 'docs/Dheeraj_Resume.pdf' %}" target="_blank" class="btn btn-primary" download>
+                    <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+                </a>
+                <a href="{% url 'projects' %}" class="btn btn-secondary">
+                    <i class="fa-solid fa-rocket"></i> View Projects
+                </a>
+                <a href="{% url 'contact' %}" class="btn btn-secondary">
+                    <i class="fa-solid fa-envelope"></i> Get In Touch
+                </a>
+            </div>
+        </div>
+
+        <!-- Profile Photo Container -->
+        <div style="flex: 0 0 260px; text-align: center; margin: 0 auto;">
+            <div style="position: relative; display: inline-block;">
+                <img src="{% static 'images/Dheeraj_Profile.jpeg' %}" alt="Dheeraj Saroha" 
+                     style="width: 240px; height: 240px; border-radius: 50%; object-fit: cover; border: 4px solid var(--accent-blue); box-shadow: 0 10px 30px rgba(56, 189, 248, 0.3);">
+            </div>
+        </div>
+
+    </div>
+</section>
+{% endblock %}
+
+
+{% comment %} {% extends 'base.html' %}
+{% block title %}Home | Dheeraj AI/ML Portfolio{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="max-width-container">
+        <div class="badge-container">
+            <i class="fa-solid fa-code-branch"></i> Software Engineer &rarr; AI/ML Engineer
+        </div>
+        <h1>Building Scalable Software.<br><span>Engineering Intelligence.</span></h1>
+        <p class="hero-subtitle">
+            Hi, I'm <strong>Dheeraj</strong>. Software Developer with ~1.5 years of professional engineering experience transitioning into scalable Machine Learning pipelines, NLP systems, and predictive Flask REST microservices.
+        </p>
+        <div class="cta-buttons">
+            <a href="{% url 'projects' %}" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Explore Projects</a>
+            <a href="{% url 'about' %}" class="btn btn-secondary"><i class="fa-solid fa-user-gear"></i> View Career Evolution</a>
+        </div>
+    </div>
+</section>
+{% endblock %} {% endcomment %}
